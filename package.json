@@ -3,6 +3,12 @@
     "node": "^16.6.1"
   },
   "dependencies": {
-    "aoi.js": "^5.0.7"
-  }
+    "aoi.js": "^5.5.5",
+    "aoi.js-panel": "^1.4.4",
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "start": "npx nodemon index.js",
+    "start:main": "node index.js"
+}
 }

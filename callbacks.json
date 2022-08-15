@@ -1,4 +1,4 @@
 {
-  "callbacks":["bot.onMessage()","bot.onInteractionCreate()"]
-
-}
+    "callbacks":["bot.onMessage()","bot.onInteractionCreate()"]
+  
+  }
