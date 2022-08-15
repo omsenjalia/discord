@@ -1,5 +1,5 @@
 module.exports = {
-    name: "hello",
+    name: "<@948159331994574848>",
     code: `
     $title[1;<:fun:959837015308898404> **__Title__**]
     $description[1;my ping is **$ping** ms
