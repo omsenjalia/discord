@@ -3,7 +3,7 @@ const aoidash = require('aoi.js-panel')
 const aoijs = require("aoi.js");
 
 const bot = new aoijs.Bot({
-    token: process.env.TOKEN, //Discord Bot Token
+    token: config.TOKEN, //Discord Bot Token
     prefix: config.PREFIX, //Discord Bot Prefix
     intents: "all" //Discord Intents
     });
