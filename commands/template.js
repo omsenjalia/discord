@@ -2,7 +2,8 @@ module.exports = {
     name: "hello",
     code: `
     $title[1;<:fun:959837015308898404> **__Title__**]
-    $description[1;my ping is **$ping** ms]
+    $description[1;my ping is **$ping** ms
+                 and i am sus]
     $color[1;RANDOM]`
 }
 
