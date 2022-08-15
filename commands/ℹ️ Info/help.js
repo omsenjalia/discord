@@ -8,7 +8,7 @@ Your current prefix is **$getServerVar[prefix]**]
     
     $title[2;**__Categorys__**]
     $description[2;
- Info Commands: **$getServerVar[prefix]help info**
+>>> Info Commands: **$getServerVar[prefix]help info**
     
 Fun Commands: **$getServerVar[prefix]help fun**
     
