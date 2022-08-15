@@ -11,7 +11,7 @@ module.exports = {
     $description[2;The Categorys are as 
     below
     Info Commands:
-    **$getServerVar[prefix]]help info**
+    **$getServerVar[prefix]help info**
     
     Fun Commands:
     **$getServerVar[prefix]help fun**
