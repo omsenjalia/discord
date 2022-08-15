@@ -26,7 +26,7 @@ handler.handler_main(bot)
 
 //Website/ Dashboard
 /*
-See ./website/dash.js for more detailed information.
+See ./website/dash.js  for more detailed information.
 */
 
 
