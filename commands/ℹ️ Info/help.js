@@ -8,15 +8,17 @@ Your current prefix is **$getServerVar[prefix]**]
     
     $title[2;**__Categorys__**]
     $description[2;
->>> Info Commands: **$getServerVar[prefix]help info**
+>>> <:emoji1:1008969884375470171> Info Commands: \`$getServerVar[prefix]help info\`
     
-Fun Commands: **$getServerVar[prefix]help fun**
+<:emoji5:1008972204177895446> Fun Commands: \`$getServerVar[prefix]help fun\`
     
-Economy Commands:  **$getServerVar[prefix]help economy**
+<:emoji3:1008971656091410532> Economy Commands:  \`$getServerVar[prefix]help economy\`
     
-General Commands: **$getServerVar[prefix]help general**
+<:emoji:1008969886535536721> General Commands: \`$getServerVar[prefix]help general\`
 
-Moderation Commands: **$getServerVar[prefix]help mod**]
+<:emoji2:1008969882148282458> Moderation Commands: \`$getServerVar[prefix]help mod\`
+
+<:emoji4:1008971653897789450> Owner Commands: \$getServerVar[prefix]help owner\`]
     $color[2;RANDOM]`
 }
 // Help for information 

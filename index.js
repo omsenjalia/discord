@@ -33,3 +33,22 @@ See ./website/dash.js  for more detailed information.
 const website = require("./website/dash.js");
 website.load_website(3001,bot);//3000 is the port you can change it of you want
 
+// custom funcs
+
+bot.functionManager.createCustomFunction({
+    name : '$say', 
+    params : ['authorid','message'],
+    type : 'aoi.js', 
+    code : ` 
+    **$userTag[{authorid}]** says: **{message}**
+    `
+    })
+
+bot.functionManager.createCustomFunction({
+    name : 'OnMention',
+    params : [`<@948159331994574848>`, `@Uno - Remastered#9971`],
+    type : 'aoi.js',
+    code : `
+    **it works {<@948159331994574848>}**
+    `
+})
