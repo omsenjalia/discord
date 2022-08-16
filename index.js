@@ -9,7 +9,7 @@ const bot = new aoijs.Bot({
     });
 
 const dash = new aoidash.Dash(bot, {
-port: 8081,
+port: 8461,
 command: './commands', //your command handler
 username: "<dashboard_username_placeholder>", //username to login to dashboard
 password: "<dashboard_password_placeholder>" //password to login to dashboard
@@ -31,7 +31,7 @@ See ./website/dash.js  for more detailed information.
 
 
 const website = require("./website/dash.js");
-website.load_website(3001,bot);//3000 is the port you can change it of you want
+website.load_website(3027,bot);//3000 is the port you can change it of you want
 
 bot.onMessage({respondToBots: false})
 bot.onInteractionCreate() 
@@ -56,7 +56,7 @@ app.post('/', webhook.listener(vote => {
 event.emit('votes', vote.user)
 }))
  
-app.listen(69) // It is best to change this port and keep it private. It is also recommended to only open the port you select (using something like ufw).
+app.listen(6937) // It is best to change this port and keep it private. It is also recommended to only open the port you select (using something like ufw).
 ////////////////////////////////////////////////////////////////////////////
 
 // custom funcs

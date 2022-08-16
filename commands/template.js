@@ -1,12 +1,10 @@
 module.exports = {
     name: "test",
     code: `
-    $OnMention
     $title[1;<:fun:959837015308898404> **__Title__**]
-    $description[1;my ping is **$ping** ms
-and i am sus
-
-also mr sus]
+    $description[1;my ping is **$ping** ms]
+    
+    This bot currently has $commandsCount commands!
     $color[1;RANDOM]`
 }
 
