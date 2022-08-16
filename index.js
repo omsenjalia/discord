@@ -33,6 +33,32 @@ See ./website/dash.js  for more detailed information.
 const website = require("./website/dash.js");
 website.load_website(3001,bot);//3000 is the port you can change it of you want
 
+bot.onMessage({respondToBots: false})
+bot.onInteractionCreate() 
+
+ bot.onMessage() //Allows to execute Commands
+
+ const express = require('express') 
+const Topgg = require('@top-gg/sdk')
+const app = express()
+const event = new aoijs.CustomEvent(bot)
+
+event.command({
+listen: "votes",
+code: `$sendDM[Thanks for voting!\nYou earned:\n**$getVar[Coi]100\n$getVar[DiamondEmoji]1**;$eventData[[0]];no]
+$setGlobalUserVar[Coins;$sum[$getGlobalUserVar[Coins;$eventData[[0]]];100];$eventData[[0]]]
+$setGlobalUserVar[Diamond;$sum[$getGlobalUserVar[Diamond;$eventData[[0]]];1];$eventData[[0]]]`
+})
+event.listen("votes")
+
+const webhook = new Topgg.Webhook(config.topgg)
+app.post('/', webhook.listener(vote => {
+event.emit('votes', vote.user)
+}))
+ 
+app.listen(69) // It is best to change this port and keep it private. It is also recommended to only open the port you select (using something like ufw).
+////////////////////////////////////////////////////////////////////////////
+
 // custom funcs
 
 bot.functionManager.createCustomFunction({
@@ -43,12 +69,3 @@ bot.functionManager.createCustomFunction({
     **$userTag[{authorid}]** says: **{message}**
     `
     })
-
-bot.functionManager.createCustomFunction({
-    name : 'OnMention',
-    params : [`<@948159331994574848>`, `@Uno - Remastered#9971`],
-    type : 'aoi.js',
-    code : `
-    **it works {<@948159331994574848>}**
-    `
-})
