@@ -18,7 +18,7 @@ Node: $nodeVersion
 Aoi.JS: v$packageVersion}
 
 {color:$getGlobalUserVar[EmbedColor]}
-{footer:Bot by Snoozeds#0802 <3 | Build v23}
+{footer:Bot by OmxproYT#1165 <3 | Build v23}
 }
 
 ]
